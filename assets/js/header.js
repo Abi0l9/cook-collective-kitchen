@@ -1,9 +1,14 @@
 const headerIcon = document.querySelector(".header-icon");
-const toggle = document.querySelector(".toggle");
 const headerMenu = document.querySelector(".header-menu");
-const menuItems = document.getElementsByClassName("menu-item");
+const [...navLinks] = document.querySelectorAll("a.nav-links");
 
 let display = false;
+
+const closeMenu = () => {
+  display = false;
+  headerMenu.style.left = "100%";
+  headerMenu.style.transition = "transform 0.5s cubic-bezier(0.8, 0, 0.16, 1)";
+};
 
 const toggleMenu = () => {
   if (!display) {
@@ -13,12 +18,14 @@ const toggleMenu = () => {
     headerMenu.style.transition =
       "transform 0.5s cubic-bezier(0.8, 0, 0.16, 1)";
   } else if (display) {
-    display = false;
-
-    headerMenu.style.left = "100%";
-    headerMenu.style.transition =
-      "transform 0.5s cubic-bezier(0.8, 0, 0.16, 1)";
+    closeMenu();
   }
 };
 
 headerIcon.addEventListener("click", toggleMenu);
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMenu();
+  });
+});
