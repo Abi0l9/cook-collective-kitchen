@@ -35,7 +35,6 @@
   justify-content: flex-end;
   align-items: center;
   font-size: 0.85rem;
-  font-weight: bold;
   margin-right: 3rem;
 }
 
@@ -51,6 +50,12 @@
   margin-left: 2.5rem;
   display: inline-block;
   position: relative;
+  cursor: pointer;
+}
+
+.header-menu .bd:hover {
+  color: #ff490d;
+  border-bottom: medium solid #ff490d;
 }
 
 .menu-item .button {
@@ -103,8 +108,7 @@ img {
     background-color: #fffaf5;
     top: 0;
     left: 100%;
-    font-size: 1.85rem;
-    font-weight: normal;
+    font-size: 1.3rem;
     transition: transform 0.5s cubic-bezier(0.8, 0, 0.16, 1);
     z-index: 100;
   }
@@ -158,5 +162,9 @@ img {
     opacity: 0;
     transition: 0.35s;
     transition-delay: 0.35s;
+  }
+
+  .menu-item {
+    margin-bottom: 0.5rem;
   }
 }

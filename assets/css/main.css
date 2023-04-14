@@ -7,10 +7,7 @@
 .block-hero {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   flex-direction: row;
   background: #fffaf5;
 }
@@ -84,7 +81,7 @@
   width: 33.33%;
   height: 2rem;
   position: absolute;
-  bottom: 8rem;
+  bottom: 5rem;
   left: 33.33%;
   background-image: url("../images/svg/line-1.svg");
   background-position: center top;
