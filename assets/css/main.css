@@ -7,10 +7,7 @@
 .block-hero {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   flex-direction: row;
   background: #fffaf5;
 }
@@ -28,8 +25,20 @@
   object-position: center;
 }
 
+.block-hero .block-hero-container-left:after {
+  content: "";
+  width: 55%;
+  height: 10rem;
+  position: absolute;
+  top: 25%;
+  right: -25%;
+  background-image: url("../images/svg/line-3.svg");
+  background-position: left top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .block-hero .block-hero-container-right {
-  display: -webkit-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,14 +52,18 @@
   height: 100%;
   max-width: calc(100% - 4rem);
   margin: 0 auto;
-  display: -webkit-box;
   display: flex;
   flex-direction: column;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   position: relative;
+}
+
+.block-hero .block-hero-container-right .scroll-down {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .block-content .text-hero {
@@ -60,6 +73,20 @@
   font-size: 3.5rem;
   color: #ff490d;
   line-height: 1.1;
+  bottom: 1rem;
+}
+
+.block-hero .block-hero-container-right .block-content h1:after {
+  content: "";
+  width: 33.33%;
+  height: 2rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 33.33%;
+  background-image: url("../images/svg/line-1.svg");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .text-highlight-small {
@@ -76,9 +103,47 @@
   display: block;
   -webkit-animation: bounce 0.75s infinite ease-in-out alternate;
   animation: bounce 0.75s infinite ease-in-out alternate;
+  margin-bottom: 0.5rem;
 }
 
-.scroll-down span {
+.scroll-down a {
   display: block;
   margin-top: 0.5rem;
+  text-decoration: none !important;
+  color: #ff490d;
+}
+
+@media (max-width: 767.98px) {
+  .block-hero .block-hero-container-left {
+    position: absolute;
+    width: 100%;
+  }
+  .block-hero .block-hero-container-left img {
+    filter: brightness(80%) saturate(0.7);
+  }
+
+  .block-hero .block-hero-container-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .block-hero .block-hero-container-right {
+    width: 100%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 50%
+    );
+  }
+
+  .block-hero .block-hero-container-right .block-content {
+    width: calc(100% - 1rem);
+    max-width: unset;
+  }
+
+  .text-hero {
+    font-size: 3.25rem !important;
+  }
 }

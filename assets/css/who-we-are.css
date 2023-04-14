@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.block {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.block-section-bg {
+  width: 100%;
+  background-color: #fffaf5;
+}
+
+.block-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+}
+
+.max-width-large {
+  max-width: 1260px;
+}
+
+.block-container-section-bg {
+  display: flex;
+}
+
+.block-container-section-bg .block-left {
+  width: 50%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.block-container-section-bg .block-content {
+  max-width: 33rem;
+}
+
+.text-title {
+  font-size: 1.85rem;
+  display: inline-block;
+  position: relative;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.text-title span {
+  position: relative;
+  display: inline;
+  border-bottom: 2px solid #ff490d;
+  line-height: 1.2;
+}
+
+.block-container-section-bg p.text-normal {
+  max-width: 27rem;
+}
+
+p {
+  margin-bottom: 1.2em;
+}
+
+.block-container-section-bg .block-right {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.block-container-section-bg .block-section-bg-image {
+  width: 100%;
+  max-width: 26rem;
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+}
+
+.block-container-section-bg .block-section-bg-image img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.block-scroll-down {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.text-highlight-small {
+  text-align: center;
+  line-height: 1;
+  font-family: "A", sans-serif;
+  font-size: 0.85rem;
+  color: #ff490d;
+  text-transform: uppercase;
+}
+
+.scroll-down img {
+  margin: 0 auto;
+  display: block;
+  animation: bounce 0.75s infinite ease-in-out alternate;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1023.98px) {
+  .block-container-section-bg {
+    width: calc(100% - 4rem);
+  }
+}
