@@ -30,6 +30,16 @@
   width: 10rem;
 }
 
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-menu a:hover {
+  color: #ff490d;
+  border-bottom: medium solid #ff490d;
+}
+
 .header-menu {
   display: flex;
   justify-content: flex-end;
@@ -51,11 +61,6 @@
   display: inline-block;
   position: relative;
   cursor: pointer;
-}
-
-.header-menu .bd:hover {
-  color: #ff490d;
-  border-bottom: medium solid #ff490d;
 }
 
 .menu-item .button {
