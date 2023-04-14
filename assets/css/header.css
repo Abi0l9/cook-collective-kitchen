@@ -39,6 +39,10 @@
   margin-right: 3rem;
 }
 
+.toggle {
+  left: 0;
+}
+
 .header-icon {
   display: none;
 }
