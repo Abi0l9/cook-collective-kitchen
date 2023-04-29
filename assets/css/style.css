@@ -1,0 +1,48 @@
+.my-btn{
+    position: below;
+    bottom: 10%;
+    background-color:#ffffff;
+    color: orangered;
+    border-color: orangered;
+    border-radius: 70px;
+    padding: 20px 90px 20px 90px;
+    text-align: center;
+}
+
+.equipments{
+    display: flex;
+    justify-content: space-between;
+}
+
+h4{
+    color: orangered;
+}
+
+.sndbutt{
+    position: below;
+    bottom: 10%;
+    background-color:orangered;
+    color: #ffffff;
+    border-color: orangered;
+    border-radius: 70px;
+    padding: 20px 90px 20px 90px;
+    text-align: center;
+}
+
+.container {
+    background-image: url("https://cookcollectivekitchen.com/wp-content/uploads/2019/07/cookcollective-sep-background-1800x854.jpg");
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    background-size: cover;
+    width: 100%;
+  }
+  .content {
+    width: 200%;
+    text-align: center;
+    padding-top: 200px;
+    padding-left: 15px;
+    height: 200rem;
+  }
+  
